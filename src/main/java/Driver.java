@@ -60,7 +60,8 @@ public class Driver {
         //runSolution("sorting.insertionsort1");
         //runSolution("sorting.insertionsort2");
         //runSolution("sorting.correctnessandtheloopinvariant");
-        runSolution("sorting.runningtime");
+        //runSolution("sorting.runningtime");
+        runSolution("sorting.quicksort1");
     }
 
 
