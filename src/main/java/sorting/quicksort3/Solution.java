@@ -17,9 +17,9 @@ public class Solution {
             return;
 
         int pivot = ar[end];
-        int tail = -1;
+        int tail = start - 1;
         int rIndex = -1;
-        for (int i = 0; i < end; i++) {
+        for (int i = start; i < end; i++) {
             if (rIndex == -1) {
                 if (ar[i] >= pivot)
                     rIndex = i;

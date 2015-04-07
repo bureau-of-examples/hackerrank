@@ -63,10 +63,7 @@ public class Driver {
         //runSolution("sorting.runningtime");
         //runSolution("sorting.quicksort1");
         //runSolution("sorting.quicksort2");
-        runSolution("sorting.quicksort3");
+        //runSolution("sorting.quicksort3");
+        runSolution("sorting.quicksort4");
     }
-
-
-
-
 }
