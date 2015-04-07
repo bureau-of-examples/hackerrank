@@ -64,6 +64,7 @@ public class Driver {
         //runSolution("sorting.quicksort1");
         //runSolution("sorting.quicksort2");
         //runSolution("sorting.quicksort3");
-        runSolution("sorting.quicksort4");
+        //runSolution("sorting.quicksort4");
+        runSolution("sorting.countingsort1");
     }
 }
