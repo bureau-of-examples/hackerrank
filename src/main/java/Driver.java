@@ -56,7 +56,8 @@ public class Driver {
         //runSolution("strings.twostrings");
         //runSolution("strings.biggerisgreater");
         //runSolution("strings.sherlockandanagrams");
-        runSolution("sorting.intrototutorial");
+        //runSolution("sorting.intrototutorial");
+        runSolution("sorting.insertionsort1");
     }
 
 
