@@ -58,7 +58,8 @@ public class Driver {
         //runSolution("strings.sherlockandanagrams");
         //runSolution("sorting.intrototutorial");
         //runSolution("sorting.insertionsort1");
-        runSolution("sorting.insertionsort2");
+        //runSolution("sorting.insertionsort2");
+        runSolution("sorting.correctnessandtheloopinvariant");
     }
 
 
