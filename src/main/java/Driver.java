@@ -73,6 +73,7 @@ public class Driver {
         //runSolution("search.findmaximumindexproduct");
         //runSolution("search.icecreamparlor");
         //runSolution("search.encryption");
-        runSolution("search.countluck");
+        //runSolution("search.countluck");
+        runSolution("search.sherlockandarray");
     }
 }
