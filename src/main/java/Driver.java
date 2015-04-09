@@ -72,6 +72,7 @@ public class Driver {
         //runSolution("search.connectedcellinagrid");
         //runSolution("search.findmaximumindexproduct");
         //runSolution("search.icecreamparlor");
-        runSolution("search.encryption");
+        //runSolution("search.encryption");
+        runSolution("search.countluck");
     }
 }
