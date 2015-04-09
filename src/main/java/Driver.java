@@ -70,6 +70,7 @@ public class Driver {
         //runSolution("sorting.countingsort3");
         //runSolution("sorting.countingsort4");
         //runSolution("search.connectedcellinagrid");
-        runSolution("search.findmaximumindexproduct");
+        //runSolution("search.findmaximumindexproduct");
+        runSolution("search.icecreamparlor");
     }
 }
