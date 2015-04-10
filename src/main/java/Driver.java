@@ -76,6 +76,7 @@ public class Driver {
         //runSolution("search.countluck");
         //runSolution("search.sherlockandarray");
         //runSolution("search.missingnumbers");
-        runSolution("search.thegridsearch");
+        //runSolution("search.thegridsearch");
+        runSolution("search.cutthetree");
     }
 }
