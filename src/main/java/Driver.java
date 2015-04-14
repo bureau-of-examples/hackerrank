@@ -83,6 +83,7 @@ public class Driver {
         //runSolution("dynamicprogramming.themaximumsubarray");
         //runSolution("combinatorics.minimumdraws");
         //runSolution("combinatorics.handshake");
+        runSolution("combinatorics.strangegrid");
     }
 }
 
