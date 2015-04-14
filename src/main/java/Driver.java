@@ -84,7 +84,8 @@ public class Driver {
         //runSolution("combinatorics.minimumdraws");
         //runSolution("combinatorics.handshake");
         //runSolution("combinatorics.strangegrid");
-        runSolution("bitmanipulation.flippingbits");
+        //runSolution("bitmanipulation.flippingbits");
+        runSolution("codegolf.fizzbuzz");
     }
 }
 
