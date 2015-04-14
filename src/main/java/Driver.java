@@ -81,12 +81,13 @@ public class Driver {
         //runSolution("graphtheory.eventree");
         //runSolution("dynamicprogramming.stockmaximaze");
         //runSolution("dynamicprogramming.themaximumsubarray");
+        runSolution("dynamicprogramming.candies");
         //runSolution("combinatorics.minimumdraws");
         //runSolution("combinatorics.handshake");
         //runSolution("combinatorics.strangegrid");
         //runSolution("bitmanipulation.flippingbits");
         //runSolution("codegolf.fizzbuzz");
-        runSolution("regex.validpanformat");
+        //runSolution("regex.validpanformat");
     }
 }
 
