@@ -78,6 +78,8 @@ public class Driver {
         //runSolution("search.missingnumbers");
         //runSolution("search.thegridsearch");
         //runSolution("search.cutthetree");
-        runSolution("graphtheory.eventree");
+        //runSolution("graphtheory.eventree");
+        //runSolution("dynamicprogramming.stockmaximaze");
+        runSolution("dynamicprogramming.themaximumsubarray");
     }
 }
