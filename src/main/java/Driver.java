@@ -80,6 +80,40 @@ public class Driver {
         //runSolution("search.cutthetree");
         //runSolution("graphtheory.eventree");
         //runSolution("dynamicprogramming.stockmaximaze");
-        runSolution("dynamicprogramming.themaximumsubarray");
+        //runSolution("dynamicprogramming.themaximumsubarray");
+        //runSolution("combinatorics.minimumdraws");
+        //runSolution("combinatorics.handshake");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
