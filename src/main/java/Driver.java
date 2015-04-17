@@ -79,9 +79,10 @@ public class Driver {
         //runSolution("search.thegridsearch");
         //runSolution("search.cutthetree");
         //runSolution("graphtheory.eventree");
+        runSolution("graphtheory.rustmurderer");
         //runSolution("dynamicprogramming.stockmaximaze");
         //runSolution("dynamicprogramming.themaximumsubarray");
-        runSolution("dynamicprogramming.candies");
+        //runSolution("dynamicprogramming.candies");
         //runSolution("combinatorics.minimumdraws");
         //runSolution("combinatorics.handshake");
         //runSolution("combinatorics.strangegrid");
