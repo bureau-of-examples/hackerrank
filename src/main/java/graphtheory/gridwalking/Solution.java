@@ -1,25 +1,22 @@
 package graphtheory.gridwalking;
 
-import java.math.BigInteger;
-import java.util.HashMap;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
  * https://www.hackerrank.com/challenges/grid-walking
+ * This dp solution is attributed to:
+ * http://blog.csdn.net/kindlucy/article/details/8002435
  */
 public class Solution {
 
     private static final long modConstant = 1000000007L;
-    private static final HashMap<BigInteger, Integer> cache = new HashMap<>();
-    private static final BigInteger[] powers = new BigInteger[11];
+
+    private static final int[][] c = new int[301][301];
 
     public static void main(String[] args) {
 
-        powers[0] = BigInteger.ONE;
-        for(int i=1; i<powers.length; i++){
-            powers[i] = powers[i-1].multiply(BigInteger.valueOf(100L));
-        }
-
+        calcC();
         Scanner in = new Scanner(System.in);
         int numTestCase = Integer.parseInt(in.nextLine());
         for (int t = 0; t < numTestCase; t++) {
@@ -41,49 +38,81 @@ public class Solution {
                 dim[index++] = Integer.valueOf(val);
             }
 
-            cache.clear();
-            System.out.println(solveHashMap(null, n, m, pos, dim));
+
+            System.out.println(solveDp(n, m, pos, dim));
         }
 
     }
 
-    private static int solveHashMap(BigInteger key, int n, int m, int[] pos, int[] dim) {
-        if (m == 0)
-            return 1;
+    /**
+     * Calculate C(i,j) = number of ways to choose j items from i items.
+     * C(i,j) = C(i-1, j-1) + C(i-1,j)
+     * C(0,0) = 1
+     * C(0,j) = 0 where j > 0
+     * C(i,0) = C(i,i) = 1 where i > 0
+     */
+    private static void calcC() {
 
-        if(key == null){
-            key = BigInteger.ZERO;
-            for(int i=0; i<n; i++){
-                key = key.add(BigInteger.valueOf(pos[i] - 1).multiply(powers[i]));
+        c[0][0] = 1;
+        for (int i = 1; i < c.length; i++) {
+
+            c[i][0] = c[i][i] = 1;
+            for (int j = 1; j < i; j++) {
+                c[i][j] = (int) (((long) c[i - 1][j - 1] + c[i - 1][j]) % modConstant);
             }
-            key = key.add(BigInteger.valueOf(m - 1).multiply(powers[10]));
         }
+    }
 
-        if (cache.containsKey(key))
-            return cache.get(key);
-
-        long count = 0;//number of ways
+    /**
+     * D[i][k][j] = number of k-step walks that starts at j in dimension i.
+     * All counted walks are confined in dimension i. This means at each step the walks can only change position component i.
+     * D[i][k][j] = D[i][k-1][j-1] + D[i][k-1][j+1]
+     * D[i][0][j] = 1
+     */
+    private static int[][][] calcD(int n, int m, int[] dim) {
+        int[][][] d = new int[n][][];
         for (int i = 0; i < n; i++) {
-            int posI = pos[i];
-            //forward
-            pos[i] = posI + 1;
-            if (pos[i] <= dim[i]) {
-                count += solveHashMap(key.subtract(powers[10]).add(powers[i]), n, m - 1, pos, dim);
-                count %= modConstant;
-            }
-            //back
-            pos[i] = posI - 1;
-            if (pos[i] > 0) {
-                count += solveHashMap(key.subtract(powers[10]).subtract(powers[i]), n, m - 1, pos, dim);
-                count %= modConstant;
-            }
-            //restore
-            pos[i] = posI;
+            d[i] = new int[m + 1][dim[i]];
+            Arrays.fill(d[i][0], 1); //k=0
 
+            for (int k = 1; k <= m; k++) {
+                for (int j = 0; j < dim[i]; j++) {
+                    d[i][k][j] = (int) (((j - 1 < 0 ? 0 : (long) d[i][k - 1][j - 1]) + (j + 1 < dim[i] ? (long) d[i][k - 1][j + 1] : 0)) % modConstant);
+                }
+            }
         }
 
-        cache.put(key, (int) count);
-        return (int) count;
+        return d;
     }
+
+    /**
+     * DP[i][k] = number of k-step walks in dimension 0~i.
+     * DP[i][k] = Sum(C[k][r]*DP[i-1][r]*D[i][pos[i]][k-r]) for r in [0,k].
+     * DP[0][k] = D[0][k][pos[0]]
+     * The meaning of r is steps made in 0~i-1 dimensions, then k-r is steps made in dimension i.
+     * DP[i-1][r]*D[i][pos[i]][k-r] = first r steps are in dimension 0~i-1, and the last k-r steps are in dimension i.
+     * C[k][r]*... means of the k steps, we select which r steps to be made in dimension 0~i-1.
+     * Moving in dimension i is independent of other dimensions.
+     */
+    private static int solveDp(int n, int m, int[] pos, int[] dim) {
+        int[][][] d = calcD(n, m, dim);
+        int[][] dp = new int[n][m + 1];
+        for (int k = 0; k <= m; k++) {//i=0
+            dp[0][k] = d[0][k][pos[0] - 1];
+        }
+
+        for (int i = 1; i < n; i++) {
+            for (int k = 0; k <= m; k++) {
+                int sum = 0;
+                for (int r = 0; r <= k; r++) {
+                    sum = (int) ((sum + (((long) c[k][r] * dp[i - 1][r] % modConstant) * d[i][k - r][pos[i] - 1]) % modConstant) % modConstant);
+                }
+                dp[i][k] = sum;
+            }
+        }
+        return dp[n - 1][m];
+
+    }
+
 
 }
