@@ -85,7 +85,8 @@ public class Driver {
         //runSolution("dynamicprogramming.stockmaximaze");
         //runSolution("dynamicprogramming.themaximumsubarray");
         //runSolution("dynamicprogramming.candies");
-        runSolution("dynamicprogramming.thecoinchangeproblem");
+        //runSolution("dynamicprogramming.thecoinchangeproblem");
+        runSolution("dynamicprogramming.knapsack");
 
         //runSolution("combinatorics.minimumdraws");
         //runSolution("combinatorics.handshake");
