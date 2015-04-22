@@ -85,13 +85,15 @@ public class Driver {
         //runSolution("dynamicprogramming.stockmaximaze");
         //runSolution("dynamicprogramming.themaximumsubarray");
         //runSolution("dynamicprogramming.candies");
+        runSolution("dynamicprogramming.thecoinchangeproblem");
+
         //runSolution("combinatorics.minimumdraws");
         //runSolution("combinatorics.handshake");
         //runSolution("combinatorics.strangegrid");
         //runSolution("bitmanipulation.flippingbits");
         //runSolution("codegolf.fizzbuzz");
         //runSolution("regex.validpanformat");
-        runSolution("regex.hackerranktweets");
+        //runSolution("regex.hackerranktweets");
     }
 }
 
