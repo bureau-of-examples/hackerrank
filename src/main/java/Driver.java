@@ -100,7 +100,8 @@ public class Driver {
 
         //runSolution("greedy.flowers");
         //runSolution("greedy.twoarrays");
-        runSolution("greedy.markandtoys");
+        //runSolution("greedy.markandtoys");
+        runSolution("greedy.jimandtheorders");
     }
 }
 
