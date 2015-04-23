@@ -99,7 +99,8 @@ public class Driver {
         //runSolution("regex.hackerranktweets");
 
         //runSolution("greedy.flowers");
-        runSolution("greedy.twoarrays");
+        //runSolution("greedy.twoarrays");
+        runSolution("greedy.markandtoys");
     }
 }
 
