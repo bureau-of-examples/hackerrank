@@ -98,7 +98,8 @@ public class Driver {
         //runSolution("regex.validpanformat");
         //runSolution("regex.hackerranktweets");
 
-        runSolution("greedy.flowers");
+        //runSolution("greedy.flowers");
+        runSolution("greedy.twoarrays");
     }
 }
 
