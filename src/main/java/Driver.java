@@ -92,7 +92,8 @@ public class Driver {
         //runSolution("combinatorics.handshake");
         //runSolution("combinatorics.strangegrid");
         //runSolution("bitmanipulation.flippingbits");
-        runSolution("bitmanipulation.cipher");
+        //runSolution("bitmanipulation.cipher");
+        runSolution("bitmanipulation.sansaandxor");
         //runSolution("codegolf.fizzbuzz");
         //runSolution("regex.validpanformat");
         //runSolution("regex.hackerranktweets");
