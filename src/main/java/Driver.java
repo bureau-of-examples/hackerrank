@@ -86,12 +86,13 @@ public class Driver {
         //runSolution("dynamicprogramming.themaximumsubarray");
         //runSolution("dynamicprogramming.candies");
         //runSolution("dynamicprogramming.thecoinchangeproblem");
-        runSolution("dynamicprogramming.knapsack");
+        //runSolution("dynamicprogramming.knapsack");
 
         //runSolution("combinatorics.minimumdraws");
         //runSolution("combinatorics.handshake");
         //runSolution("combinatorics.strangegrid");
         //runSolution("bitmanipulation.flippingbits");
+        runSolution("bitmanipulation.cipher");
         //runSolution("codegolf.fizzbuzz");
         //runSolution("regex.validpanformat");
         //runSolution("regex.hackerranktweets");
