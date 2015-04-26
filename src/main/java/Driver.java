@@ -92,7 +92,7 @@ public class Driver {
         //runSolution("combinatorics.handshake");
         //runSolution("combinatorics.strangegrid");
         //runSolution("combinatorics.connectingtowns");
-        runSolution("combinatorics.pickingcards");
+        //runSolution("combinatorics.pickingcards");
         //runSolution("bitmanipulation.flippingbits");
         //runSolution("bitmanipulation.cipher");
         //runSolution("bitmanipulation.sansaandxor");
@@ -104,6 +104,7 @@ public class Driver {
         //runSolution("greedy.twoarrays");
         //runSolution("greedy.markandtoys");
         //runSolution("greedy.jimandtheorders");
+        runSolution("greedy.gridchallenge");
     }
 }
 
