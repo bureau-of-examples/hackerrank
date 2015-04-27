@@ -69,6 +69,7 @@ public class Driver {
         //runSolution("sorting.countingsort2");
         //runSolution("sorting.countingsort3");
         //runSolution("sorting.countingsort4");
+        runSolution("sorting.closestnumbers");
         //runSolution("search.connectedcellinagrid");
         //runSolution("search.findmaximumindexproduct");
         //runSolution("search.icecreamparlor");
@@ -106,7 +107,7 @@ public class Driver {
         //runSolution("greedy.jimandtheorders");
         //runSolution("greedy.gridchallenge");
         //runSolution("greedy.priyankaandtoys");
-        runSolution("greedy.largestpermutation");
+        //runSolution("greedy.largestpermutation");
     }
 }
 
