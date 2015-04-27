@@ -105,7 +105,8 @@ public class Driver {
         //runSolution("greedy.markandtoys");
         //runSolution("greedy.jimandtheorders");
         //runSolution("greedy.gridchallenge");
-        runSolution("greedy.priyankaandtoys");
+        //runSolution("greedy.priyankaandtoys");
+        runSolution("greedy.largestpermutation");
     }
 }
 
