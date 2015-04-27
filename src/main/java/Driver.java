@@ -69,7 +69,8 @@ public class Driver {
         //runSolution("sorting.countingsort2");
         //runSolution("sorting.countingsort3");
         //runSolution("sorting.countingsort4");
-        runSolution("sorting.closestnumbers");
+        //runSolution("sorting.closestnumbers");
+        runSolution("sorting.findmedian");
         //runSolution("search.connectedcellinagrid");
         //runSolution("search.findmaximumindexproduct");
         //runSolution("search.icecreamparlor");
