@@ -71,7 +71,8 @@ public class Driver {
         //runSolution("sorting.countingsort4");
         //runSolution("sorting.closestnumbers");
         //runSolution("sorting.findmedian");
-        runSolution("sorting.sherlockandwatson");
+        //runSolution("sorting.sherlockandwatson");
+        runSolution("sorting.sherlockandpairs");
         //runSolution("search.connectedcellinagrid");
         //runSolution("search.findmaximumindexproduct");
         //runSolution("search.icecreamparlor");
