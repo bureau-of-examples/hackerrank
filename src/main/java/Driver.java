@@ -72,7 +72,7 @@ public class Driver {
         //runSolution("sorting.closestnumbers");
         //runSolution("sorting.findmedian");
         //runSolution("sorting.sherlockandwatson");
-        runSolution("sorting.sherlockandpairs");
+        //runSolution("sorting.sherlockandpairs");
         //runSolution("search.connectedcellinagrid");
         //runSolution("search.findmaximumindexproduct");
         //runSolution("search.icecreamparlor");
@@ -100,6 +100,7 @@ public class Driver {
         //runSolution("bitmanipulation.flippingbits");
         //runSolution("bitmanipulation.cipher");
         //runSolution("bitmanipulation.sansaandxor");
+        runSolution("bitmanipulation.countergame");
         //runSolution("codegolf.fizzbuzz");
         //runSolution("regex.validpanformat");
         //runSolution("regex.hackerranktweets");
