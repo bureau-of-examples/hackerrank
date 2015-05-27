@@ -91,6 +91,7 @@ public class Driver {
         //runSolution("dynamicprogramming.candies");
         //runSolution("dynamicprogramming.thecoinchangeproblem");
         //runSolution("dynamicprogramming.knapsack");
+        runSolution("dynamicprogramming.longestincreasingsubsequence");
 
         //runSolution("combinatorics.minimumdraws");
         //runSolution("combinatorics.handshake");
@@ -100,7 +101,7 @@ public class Driver {
         //runSolution("bitmanipulation.flippingbits");
         //runSolution("bitmanipulation.cipher");
         //runSolution("bitmanipulation.sansaandxor");
-        runSolution("bitmanipulation.countergame");
+        //runSolution("bitmanipulation.countergame");
         //runSolution("codegolf.fizzbuzz");
         //runSolution("regex.validpanformat");
         //runSolution("regex.hackerranktweets");
