@@ -92,7 +92,7 @@ public class Driver {
         //runSolution("dynamicprogramming.thecoinchangeproblem");
         //runSolution("dynamicprogramming.knapsack");
         //runSolution("dynamicprogramming.longestincreasingsubsequence");
-        runSolution("dynamicprogramming.bricksgame");
+       // runSolution("dynamicprogramming.bricksgame");
 
         //runSolution("combinatorics.minimumdraws");
         //runSolution("combinatorics.handshake");
@@ -114,6 +114,8 @@ public class Driver {
         //runSolution("greedy.gridchallenge");
         //runSolution("greedy.priyankaandtoys");
         //runSolution("greedy.largestpermutation");
+
+        runSolution("geometry.findpoint");
     }
 }
 
