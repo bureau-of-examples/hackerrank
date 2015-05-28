@@ -114,9 +114,10 @@ public class Driver {
         //runSolution("greedy.gridchallenge");
         //runSolution("greedy.priyankaandtoys");
         //runSolution("greedy.largestpermutation");
+        runSolution("greedy.chiefhopper");
 
         //runSolution("geometry.findpoint");
-        runSolution("geometry.rectangulargame");
+        //runSolution("geometry.rectangulargame");
     }
 }
 
