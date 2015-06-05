@@ -1,5 +1,6 @@
 package sorting.almostsorted;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -14,20 +15,58 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             array[i] = in.nextInt();
         }
-        if(checkSwap(array))
+
+        if(isSorted(array)) {
             return;
+        }
 
-        if(checkReverse(array))
+        int[] sorted = Arrays.copyOf(array, array.length);
+        Arrays.sort(sorted);
+        int left = 0;
+        int right = array.length - 1;
+        while (sorted[left] == array[left])
+            left++;
+        while (sorted[right] == array[right])
+            right--;
+
+        swap(array, left, right);
+        if(isSorted(array)){
+            System.out.println("yes");
+            System.out.println("swap " + (left+1) + " " + (right+1));
             return;
+        }
 
-        System.out.println("No");
+        swap(array, left, right);
+        reverse(array, left, right);
+        if(isSorted(array)){
+            System.out.println("yes");
+            System.out.println("reverse " + (left+1) + " " + (right+1));
+            return;
+        }
+
+        System.out.println("no");
     }
 
-    private static boolean checkReverse(int[] array) {
-        return false;  //To change body of created methods use File | Settings | File Templates.
+    private static boolean isSorted(int[] array){
+       for(int i=1; i<array.length; i++)
+           if(array[i] < array[i-1])
+               return false;
+
+        return true;
     }
 
-    private static boolean checkSwap(int[] array) {
-        return false;
+    private static void swap(int[] array, int left, int right){
+        int temp = array[left];
+        array[left] = array[right];
+        array[right] = temp;
     }
+
+    private static void reverse(int[] array, int left, int right){
+        while (left < right){
+            swap(array, left, right);
+            left++;
+            right--;
+        }
+    }
+
 }

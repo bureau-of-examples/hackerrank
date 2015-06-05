@@ -73,6 +73,7 @@ public class Driver {
         //runSolution("sorting.findmedian");
         //runSolution("sorting.sherlockandwatson");
         //runSolution("sorting.sherlockandpairs");
+        runSolution("sorting.almostsorted");
         //runSolution("search.connectedcellinagrid");
         //runSolution("search.findmaximumindexproduct");
         //runSolution("search.icecreamparlor");
@@ -93,7 +94,7 @@ public class Driver {
         //runSolution("dynamicprogramming.knapsack");
         //runSolution("dynamicprogramming.longestincreasingsubsequence");
        // runSolution("dynamicprogramming.bricksgame");
-       runSolution("dynamicprogramming.thelongestcommonsubsequence");
+       //runSolution("dynamicprogramming.thelongestcommonsubsequence");
 
         //runSolution("combinatorics.minimumdraws");
         //runSolution("combinatorics.handshake");
