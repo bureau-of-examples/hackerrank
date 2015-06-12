@@ -5,7 +5,7 @@ public class Driver {
 
     private static void runSolution(String packageName) throws Exception{
 
-        Method mainMethod = Class.forName(packageName + ".Solution").getMethod("main", new Class[]{String[].class});
+        Method mainMethod = Class.forName(packageName + ".Solution").getMethod("main", String[].class);
         mainMethod.setAccessible(true);
         int count = 1;
         while (true){
@@ -73,7 +73,7 @@ public class Driver {
         //runSolution("sorting.findmedian");
         //runSolution("sorting.sherlockandwatson");
         //runSolution("sorting.sherlockandpairs");
-        runSolution("sorting.almostsorted");
+        //runSolution("sorting.almostsorted");
         //runSolution("search.connectedcellinagrid");
         //runSolution("search.findmaximumindexproduct");
         //runSolution("search.icecreamparlor");
@@ -95,6 +95,7 @@ public class Driver {
         //runSolution("dynamicprogramming.longestincreasingsubsequence");
        // runSolution("dynamicprogramming.bricksgame");
        //runSolution("dynamicprogramming.thelongestcommonsubsequence");
+       runSolution("dynamicprogramming.equal");
 
         //runSolution("combinatorics.minimumdraws");
         //runSolution("combinatorics.handshake");
