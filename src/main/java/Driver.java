@@ -95,7 +95,8 @@ public class Driver {
         //runSolution("dynamicprogramming.longestincreasingsubsequence");
        // runSolution("dynamicprogramming.bricksgame");
        //runSolution("dynamicprogramming.thelongestcommonsubsequence");
-       runSolution("dynamicprogramming.equal");
+       //runSolution("dynamicprogramming.equal");
+       runSolution("dynamicprogramming.fibonaccimodified");
 
         //runSolution("combinatorics.minimumdraws");
         //runSolution("combinatorics.handshake");
