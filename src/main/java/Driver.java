@@ -98,7 +98,8 @@ public class Driver {
        //runSolution("dynamicprogramming.equal");
        //runSolution("dynamicprogramming.fibonaccimodified");
        //runSolution("dynamicprogramming.legoblocks");
-       runSolution("dynamicprogramming.theindianjob");
+       //runSolution("dynamicprogramming.theindianjob");
+       runSolution("dynamicprogramming.redjohnisback");
 
         //runSolution("combinatorics.minimumdraws");
         //runSolution("combinatorics.handshake");
