@@ -3,15 +3,15 @@ import java.lang.reflect.Method;
 
 public class Driver {
 
-    private static void runSolution(String packageName) throws Exception{
+    private static void runSolution(String packageName) throws Exception {
 
         Method mainMethod = Class.forName(packageName + ".Solution").getMethod("main", String[].class);
         mainMethod.setAccessible(true);
         int count = 1;
-        while (true){
+        while (true) {
             InputStream stdin = Driver.class.getClassLoader().getResourceAsStream(packageName.replace('.', '/') + (count == 1 ? "" : String.valueOf(count)) + ".tc");
-            if(stdin == null){
-                if(count == 1)
+            if (stdin == null) {
+                if (count == 1)
                     throw new RuntimeException("Need at least one test case.");
                 else
                     break;
@@ -25,12 +25,13 @@ public class Driver {
 
     public static void main(String[] args) throws Exception {
 
+        //testComplexity();
+
         //runSolution("warmup.utopiantree");
         //runSolution("warmup.maximizingxor");
         //runSolution("warmup.servicelane");
         //runSolution("warmup.thelovelettermystery");
         //runSolution("warmup.lonelyinteger");
-        //testComplexity();
         //runSolution("warmup.cutthesticks");
         //runSolution("warmup.angryprofessor");
         //runSolution("warmup.halloweenparty");
@@ -46,6 +47,7 @@ public class Driver {
         //runSolution("warmup.sherlockandgcd");
         //runSolution("warmup.sherlockandthebeast");
         //runSolution("warmup.fillingjars");
+
         //runSolution("strings.pangrams");
         //runSolution("strings.alternatingcharacters");
         //runSolution("strings.gameofthronesi");
@@ -74,6 +76,7 @@ public class Driver {
         //runSolution("sorting.sherlockandwatson");
         //runSolution("sorting.sherlockandpairs");
         //runSolution("sorting.almostsorted");
+
         //runSolution("search.connectedcellinagrid");
         //runSolution("search.findmaximumindexproduct");
         //runSolution("search.icecreamparlor");
@@ -83,23 +86,25 @@ public class Driver {
         //runSolution("search.missingnumbers");
         //runSolution("search.thegridsearch");
         //runSolution("search.cutthetree");
+
         //runSolution("graphtheory.eventree");
         //runSolution("graphtheory.rustmurderer");
         //runSolution("graphtheory.beadornaments");
         //runSolution("graphtheory.gridwalking");
+
         //runSolution("dynamicprogramming.stockmaximaze");
         //runSolution("dynamicprogramming.themaximumsubarray");
         //runSolution("dynamicprogramming.candies");
         //runSolution("dynamicprogramming.thecoinchangeproblem");
         //runSolution("dynamicprogramming.knapsack");
         //runSolution("dynamicprogramming.longestincreasingsubsequence");
-       // runSolution("dynamicprogramming.bricksgame");
-       //runSolution("dynamicprogramming.thelongestcommonsubsequence");
-       //runSolution("dynamicprogramming.equal");
-       //runSolution("dynamicprogramming.fibonaccimodified");
-       //runSolution("dynamicprogramming.legoblocks");
-       //runSolution("dynamicprogramming.theindianjob");
-       runSolution("dynamicprogramming.redjohnisback");
+        //runSolution("dynamicprogramming.bricksgame");
+        //runSolution("dynamicprogramming.thelongestcommonsubsequence");
+        //runSolution("dynamicprogramming.equal");
+        //runSolution("dynamicprogramming.fibonaccimodified");
+        //runSolution("dynamicprogramming.legoblocks");
+        //runSolution("dynamicprogramming.theindianjob");
+        //runSolution("dynamicprogramming.redjohnisback");
 
         //runSolution("combinatorics.minimumdraws");
         //runSolution("combinatorics.handshake");
@@ -110,7 +115,9 @@ public class Driver {
         //runSolution("bitmanipulation.cipher");
         //runSolution("bitmanipulation.sansaandxor");
         //runSolution("bitmanipulation.countergame");
+
         //runSolution("codegolf.fizzbuzz");
+
         //runSolution("regex.validpanformat");
         //runSolution("regex.hackerranktweets");
 
@@ -125,6 +132,8 @@ public class Driver {
 
         //runSolution("geometry.findpoint");
         //runSolution("geometry.rectangulargame");
+
+        runSolution("practice.fibonaccilite");
     }
 }
 
