@@ -135,7 +135,8 @@ public class Driver {
 
         //runSolution("practice.fibonaccilite");
 
-        runSolution("strings.twocharacters");
+        //runSolution("strings.twocharacters");
+        runSolution("strings.separatethenumbers");
     }
 }
 
