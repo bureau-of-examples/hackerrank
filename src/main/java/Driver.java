@@ -133,7 +133,9 @@ public class Driver {
         //runSolution("geometry.findpoint");
         //runSolution("geometry.rectangulargame");
 
-        runSolution("practice.fibonaccilite");
+        //runSolution("practice.fibonaccilite");
+
+        runSolution("strings.twocharacters");
     }
 }
 
